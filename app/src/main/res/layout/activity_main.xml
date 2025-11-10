@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+
+    <!-- снизу поисковик -->
+    <SearchView
+        android:id="@+id/search_view"
+        android:layout_width="303dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/search_bg"
+        android:iconifiedByDefault="false"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:queryHint="Search"
+        app:layout_constraintBottom_toTopOf="@+id/button_bank"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!-- снизу кнопка Notification ___ id/button_notif -->
+    <ImageButton
+        android:id="@+id/button_notif"
+        android:layout_width="39dp"
+        android:layout_height="32dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/notification"
+        android:tint="@color/orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toEndOf="@+id/search_view"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <!-- Снизу Кнопка State и его текст ___  id/button_state   -->
+    <ImageButton
+        android:id="@+id/button_state"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/state"
+        android:tint="@color/orange"
+        app:layout_constraintTop_toBottomOf="@+id/button_bank"
+        tools:layout_editor_absoluteX="44dp" />
+    <TextView
+        android:id="@+id/bank_button_txt"
+        android:layout_width="75dp"
+        android:layout_height="21dp"
+
+        android:text="      State"
+        android:textColor="@color/black"
+
+        android:textColorHint="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/button_state"
+        tools:layout_editor_absoluteX="33dp" />
+
+
+    <!-- Снизу Кнопка My Bank и его текст ____ id/button_bank   -->
+    <ImageButton
+        android:id="@+id/button_bank"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="208dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/bank"
+        android:tint="@color/orange"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/bank_button_txt"
+        android:layout_width="79dp"
+        android:layout_height="20dp"
+
+        android:text="   My Bank"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/button_bank"
+        tools:layout_editor_absoluteX="31dp" />
+
+
+    <!-- Снизу Кнопка Payments и его текст ____ id/button_payments   -->
+    <ImageButton
+        android:id="@+id/bitton_payments"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="44dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/payments"
+        android:tint="@color/orange"
+        app:layout_constraintStart_toEndOf="@+id/button_shop"
+        tools:layout_editor_absoluteY="208dp" />
+    <TextView
+        android:id="@+id/bank_button_txt"
+        android:layout_width="79dp"
+        android:layout_height="20dp"
+
+        android:text="  Payments"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/bitton_payments"
+        tools:layout_editor_absoluteX="221dp" />
+
+
+    <!-- Снизу Кнопка Shop и его текст ____ id/button_shop   -->
+    <ImageButton
+        android:id="@+id/button_shop"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="44dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/shop"
+        android:tint="@color/orange"
+        app:layout_constraintStart_toEndOf="@+id/button_bank"
+        tools:layout_editor_absoluteY="208dp" />
+    <TextView
+        android:id="@+id/bank_button_txt"
+        android:layout_width="79dp"
+        android:layout_height="20dp"
+
+        android:text="       Shop"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/button_shop"
+        tools:layout_editor_absoluteX="124dp" />
+
+
+    <!-- Снизу Кнопка Transfer и его текст ____ id/button_transfer   -->
+    <ImageButton
+        android:id="@+id/button_transfer"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="44dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/transfer"
+        android:tint="@color/orange"
+        app:layout_constraintStart_toEndOf="@+id/bitton_payments"
+        tools:layout_editor_absoluteY="208dp" />
+    <TextView
+        android:id="@+id/bank_button_txt"
+        android:layout_width="79dp"
+        android:layout_height="20dp"
+
+        android:text="  Transfers"
+        android:textColor="@color/black"
+
+        android:textColorHint="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/button_transfer"
+        tools:layout_editor_absoluteX="316dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

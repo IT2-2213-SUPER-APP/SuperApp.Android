@@ -1,0 +1,43 @@
+# Gradle files
+.gradle/
+build/
+*/build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Log files
+*.log
+
+# Android Studio
+.idea/
+*.iml
+*.hprof
+
+# Keystore files
+*.jks
+*.keystore
+
+# Generated files
+captures/
+output.json
+
+# Android specific
+*.apk
+*.ap_
+*.dex
+*.class
+*.jar
+*.war
+*.ear
+
+# Proguard
+proguard/
+mapping.txt
+
+# NDK
+obj/
+*.so
+
+# Firebase / Google Services
+google-services.json
