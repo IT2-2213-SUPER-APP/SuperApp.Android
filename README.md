@@ -2,6 +2,6 @@
 Постепенно создаю интерфейс для SuperAPP 
 
 ## Screenshots 
-<img width="1411" height="1149" alt="image" src="https://github.com/user-attachments/assets/9e14584b-062e-4e05-b3e6-4e6593c7808c" />
+<img width="1739" height="1344" alt="image" src="https://github.com/user-attachments/assets/dfed0e6e-e144-42b7-b041-1152d41b266a" />
 
 
